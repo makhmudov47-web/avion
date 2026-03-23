@@ -8,7 +8,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 
 img {
@@ -85,42 +85,265 @@ i:nth-child(1):hover {
   transform: rotate(90deg);
   transition: 1.5s;
 }
-
-.product-top{
-    display: flex;
-    justify-content: space-around;
+main{
+  margin: 100px 0 100px;
+}
+.product-main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+ 
+  
+  h2{
+    font-family: Clash Display;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #2a254b;
+  
+  }
 }
 
-.product-top-left{
-    display: flex;
-    gap: 350px;
-    justify-content: space-around;
+
+
+.product-header,
+.product-elem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 150px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ebe8f4;
+  
+
+
+  span {
+    font-family: Clash Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #2a254b;
+  }
+}
+.product-elem:nth-child(3) {
+  border: none;
+  
 }
 
-.product{
-    display: flex;
-    flex-direction: column;
+
+
+.product-item {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+  gap: 8px;
 }
 
-.product-main-elem{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
+.product-item img {
+  width: 100px;
+  height: 134px;
+}
+.product-img-description {
+  h5 {
+    font-family: Clash Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #2a254b;
+  }
+
+  p {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #2a254b;
+    width: 179px;
+    height: 42px;
+    opacity: 1px;
+  }
+  span {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #2a254b;
+  }
 }
 
-.product-main-item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-    justify-content: space-around;
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 122px;
+  height: 46px;
+  opacity: 1;
+  top: 226px;
+  left: 838px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  background: #f9f9f9;
+
+  button {
+    background: none;
+    border: 0px solid #000;
+    color: #ebe8f4;
+  }
+  span {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2a254b;
+
+  }
 }
-.product-photo-1{
-    background: url(./img/Product\ Image.png) no-repeat center/cover;
-    width: 109px;
-height: 134px;
+
+.price{
+  font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #2a254b;
+
+}
+
+.product-footer{
+  text-align: right;
+  h2{
+    font-family: Clash Display;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: right;
+color: #2a254b;
+  }
+
+  p{
+    font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: right;
+padding-block: 15px;
+color: #2a254b;
+
+  }
+
+  button{
+    width: 172px;
+height: 56px;
+opacity: 1;
+top: 645px;
+left: 1080px;
+gap: 10px;
+padding-top: 16px;
+padding-right: 32px;
+padding-bottom: 16px;
+padding-left: 32px;
+background-color: #2a254b;
+color: #ffff;
+  }
+}
+
+footer{
+  background-color: #2A254B;
+  color: #f9f9f9;
+
+
+
+
+  .container{background-color: #2A254B;}
+}
+
+.footer-service{
+  padding: 48px 0 58px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f7f4f4;
 
 
 
 }
+
+.footer-service ul:nth-child(4){
+flex-basis: 100px;
+}
+
+label{
+  display: flex;
+
+  input{
+    width: 509px;
+height: 56px;
+opacity: 1;
+
+  }
+
+  button{
+    width: 118px;
+height: 56px;
+opacity: 1;
+gap: 10px;
+padding-top: 16px;
+padding-right: 32px;
+padding-bottom: 16px;
+padding-left: 32px;
+color: #2A254B;
+  }
+}
+
+ul{
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  h4{
+    font-family: Clash Display;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
+  }
+  a{
+    font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+text-decoration: none;
+color: #ebe8f4;
+  }
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-between  ;
+  padding: 25px 0;
+}
+
